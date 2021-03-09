@@ -107,9 +107,9 @@ text-transform: uppercase;
   }
 }
 
-/*****************************************HEADER MAIN OFFER BUTTON ******************************/
+/*****************************************HEADER CONTACT US BUTTON ******************************/
 .btn-main-offer {
-  border: 1px solid var(--primary-red);
+  border: 3px solid var(--primary-red);
   text-transform: uppercase;
   border-radius: 0;
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;

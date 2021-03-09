@@ -6,15 +6,15 @@ const Header = () => {
     return (
         <div className="header-wrapper">
             <div className="main-info">
-                <h1>web development and websites promotions</h1>
+                <h1>Fathers for Parental Equity</h1>
                 <Typed
                 className="typed-text"
-                strings={['web Design', "web Development", "Fackbook Ads SMM", "Google Ads"]}
+                strings={["Social Media","Legal" ,"Financial","Family Entertainment","Resources",]}
                 typeSpeed={40}
                 backSpeed={60}
                 loop
                 />
-                <a href="#" className="btn-main-offer">Contact me</a>
+                <a href="#" className="btn-main-offer">Contact us</a>
             </div>
         </div>
     )

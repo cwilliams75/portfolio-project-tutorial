@@ -4,6 +4,8 @@ import myLogo from "../Dad.jpg";
 // REACT FONT AWESOME IMPORTS
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faBars} from "@fortawesome/free-solid-svg-icons";
+import {Link} from "react-router-dom";
+
 
 const Navbar = () => {
   return (
@@ -24,12 +26,14 @@ const Navbar = () => {
            <FontAwesomeIcon icon={faBars} style={{ color: "#fff" }}/>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
+
             <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">about</a>
+                 <a className="nav-link" href="#">about</a> 
+                {/* <Link to="/about">About</Link> */}
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">services</a>
@@ -43,7 +47,6 @@ const Navbar = () => {
               <li className="nav-item">
                 <a className="nav-link" href="#">contacts</a>
               </li>
-
             </ul>
           </div>
         </div>

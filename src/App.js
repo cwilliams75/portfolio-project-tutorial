@@ -4,10 +4,20 @@ import Particles from "react-particles-js";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 
+import Contact from "./components/Contact";
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route, Link
+} from "react-router-dom";
 
 function App() {
   return (
     <>
+    <Router>
+    <Switch>
+      <Route path="/">
       <Particles
       className="particles-canvas"
         params={{
@@ -31,6 +41,16 @@ function App() {
         />
       <Navbar />
       <Header />
+      
+      </Route>
+      <Link>
+           <Route path="/about" component={Navbar}> 
+          {/* <Contact></Contact> */}
+           </Route> 
+      </Link>
+        </Switch>
+      
+      </Router>
     </>
   );
 }
